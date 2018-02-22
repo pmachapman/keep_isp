@@ -8,7 +8,7 @@ RES = ..\res
 CFLAGS = -I$(INC) -P -O2 -w
 
 $(BIN)\keep_isp.exe: directories $(OBJ)\keep_isp.obj $(OBJ)\keep_isp.res
-		$(ILINK) c0w32.obj $(OBJ)\keep_isp.obj,$(BIN)\keep_isp.exe,$(BIN)\keep_isp,cw32.lib import32.lib,,$(OBJ)\keep_isp.res
+		$(ILINK) -aa c0w32.obj $(OBJ)\keep_isp.obj,$(BIN)\keep_isp.exe,$(BIN)\keep_isp,cw32.lib import32.lib,,$(OBJ)\keep_isp.res
 
 $(OBJ)\keep_isp.obj: $(SRC)\keep_isp.cpp
 		$(CC) $(CFLAGS) -c -o$(OBJ)\keep_isp.obj $(SRC)\keep_isp.cpp
