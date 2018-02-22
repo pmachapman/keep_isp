@@ -1,0 +1,6 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "keep_isp.h"
+
+IDI_APP                 ICON    DISCARDABLE     "keep_isp.ico"
+
